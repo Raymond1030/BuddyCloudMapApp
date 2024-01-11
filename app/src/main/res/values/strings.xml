@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Cloud Map Mobile App</string>
+    <string name="location_details_will_appear_here">Location details will appear here</string>
+    <string name="search">Search</string>
+    <string name="search_hint" />
+    <string name="textview">TextView</string>
+    <string name="Textview">TextView</string>
+</resources>
