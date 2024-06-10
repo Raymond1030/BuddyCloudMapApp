@@ -57,6 +57,16 @@
 
 后端和数据库可以选择与 GeoDjango项目配合使用：[GeoDjango_smallLocationbase ](https://github.com/Raymond1030/GeoDjango_smallLocationbase)
 
+
+
+## 发布
+
+欢迎来下载APK来试玩和开发：
+
+版本: [BuddyCloudMapApp 1.0](https://github.com/Raymond1030/BuddyCloudMapApp/releases/tag/Release)
+
+
+
 ## 许可证
 
 MIT

@@ -56,9 +56,9 @@ The backend and database can optionally be used with the GeoDjango project: [Geo
 
 ## Release
 
+Welcome to Download the APK to Play
 
-
-
+Edition: [BuddyCloudMapApp 1.0](https://github.com/Raymond1030/BuddyCloudMapApp/releases/tag/Release)
 
 ## License
 
