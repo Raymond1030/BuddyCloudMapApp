@@ -5,4 +5,6 @@
     <string name="search_hint" />
     <string name="textview">TextView</string>
     <string name="Textview">TextView</string>
+    <string name="poi">周边POI搜索</string>
+    <string name="poi搜索" />
 </resources>

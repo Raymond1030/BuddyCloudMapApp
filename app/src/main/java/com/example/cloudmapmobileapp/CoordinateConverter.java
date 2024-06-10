@@ -1,2 +1,2 @@
-package com.example.cloudmapmobileapp;public class CoordinateConverter {
+package com.example.BuddyCloudMapApp;public class CoordinateConverter {
 }

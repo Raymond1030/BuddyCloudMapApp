@@ -1,2 +1,2 @@
-package com.example.cloudmapmobileapp;public class POI {
+package com.example.BuddyCloudMapApp;public class POI {
 }

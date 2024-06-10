@@ -38,13 +38,13 @@
 1. **克隆这个仓库:**
 
    ```sh
-   git clone https://github.com/Raymond1030/CloudMapMobileApp.git
+   git clone https://github.com/Raymond1030/BuddyCloudMapApp.git
    ```
 
 2. **导航到项目目录:**
 
    ```sh
-   cd CloudMapMobileApp
+   cd BuddyCloudMapApp
    ```
 
 3. **安装必要的依赖项**

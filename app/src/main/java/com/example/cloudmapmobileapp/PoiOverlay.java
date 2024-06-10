@@ -1,4 +1,4 @@
-package com.example.cloudmapmobileapp;
+package com.example.BuddyCloudMapApp;
 
 import android.os.Bundle;
 

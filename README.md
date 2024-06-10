@@ -32,17 +32,17 @@ Before you start the development, you need to register the developer account of 
 
 #### Repository Clone and Configure
 
-To get started development with CloudMapMobileApp, follow these steps:
+To get started development with BuddyCloudMapApp, follow these steps:
 
 1. **Clone the repository:**
    
     ```sh
-    git clone https://github.com/Raymond1030/CloudMapMobileApp.git
+    git clone https://github.com/Raymond1030/BuddyCloudMapApp.git
     ```
 2. **Navigate to the project directory:**
    
     ```sh
-    cd CloudMapMobileApp
+    cd BuddyCloudMapApp
     ```
 3. **Install the necessary dependencies:**
    

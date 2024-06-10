@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.cloudmapmobileapp"
+    namespace = "com.example.BuddyCloudMapApp"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.cloudmapmobileapp"
+        applicationId = "com.example.BuddyCloudMapApp"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -40,11 +40,12 @@ dependencies {
     implementation(files("./libs/BaiduLBS_Android.aar"))
 
 //    implementation(fileTree(mapOf(
-//        "dir" to "C:\\ProgramData\\Astudy\\PKU\\Distributed-computing-of-spatial-data\\CloudMapMobileApp\\app\\libs",
+//        "dir" to "C:\\ProgramData\\Astudy\\PKU\\Distributed-computing-of-spatial-data\\BuddyCloudMapApp\\app\\libs",
 //        "include" to listOf("*.aar", "*.jar")
 //    )))
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1");
-    implementation 'com.squareup.okhttp3:okhttp:4.9.0'
+    implementation("com.squareup.okhttp3:okhttp:4.9.0")
+    implementation("com.google.code.gson:gson:2.6.2")
 }

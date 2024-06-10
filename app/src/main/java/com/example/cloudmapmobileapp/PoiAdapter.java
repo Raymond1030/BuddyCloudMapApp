@@ -1,4 +1,4 @@
-package com.example.cloudmapmobileapp;
+package com.example.BuddyCloudMapApp;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -12,7 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.baidu.mapapi.search.core.PoiInfo;
-import com.example.cloudmapmobileapp.R;
+import com.example.BuddyCloudMapApp.R;
 
 import java.util.List;
 

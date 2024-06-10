@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.CloudMapMobileApp" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.BuddyCloudMapApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
@@ -8,5 +8,5 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="Theme.CloudMapMobileApp" parent="Base.Theme.CloudMapMobileApp" />
+    <style name="Theme.BuddyCloudMapApp" parent="Base.Theme.BuddyCloudMapApp" />
 </resources>

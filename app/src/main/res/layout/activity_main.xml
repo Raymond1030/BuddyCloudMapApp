@@ -8,69 +8,119 @@
     android:padding="16dp"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/location_text_view"
+        android:layout_width="326dp"
+        android:layout_height="47dp"
+        android:text="@string/location_details_will_appear_here"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
     <EditText
         android:id="@+id/search_box"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:hint="@string/search_hint"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="208dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="24dp"
+        android:autofillHints="POI关键词"
+        android:hint="请输入POI关键词"
         app:layout_constraintEnd_toStartOf="@id/search_button"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/location_text_view" />
 
     <Button
         android:id="@+id/search_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="@string/search"
-        app:layout_constraintTop_toTopOf="@id/search_box"
+        android:layout_marginEnd="20dp"
+        android:text="周边POI搜索"
+        app:layout_constraintBottom_toBottomOf="@id/search_box"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/search_box" />
+        app:layout_constraintTop_toBottomOf="@+id/location_text_view"
+        app:layout_constraintVertical_bias="1.0" />
 
-    <TextView
-        android:id="@+id/location_text_view"
-        android:layout_width="0dp"
+
+
+
+    <EditText
+        android:id="@+id/name_location"
+        android:layout_width="197dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_box"
+        android:autofillHints=""
+        android:hint="Input Name"/>
+
+    <Button
+        android:id="@+id/add_location_button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/location_details_will_appear_here"
-        android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@id/search_button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:layout_marginStart="4dp"
+        android:text="添加当前位置到云端"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/name_location"
+        app:layout_constraintTop_toBottomOf="@+id/search_button" />
 
-    <ListView
-        android:id="@+id/searchResult"
+
+    <Button
+        android:id="@+id/queryFriend_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="100dp"
+        android:text="查询周边小伙伴位置"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintTop_toBottomOf="@+id/add_location_button" />
+
+    <!-- 使用 FrameLayout 来叠加 MapView 和 ListView -->
+    <FrameLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:visibility="gone"
-
-        app:layout_constraintTop_toBottomOf="@id/location_text_view"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/bmapView" />
-
-    <com.baidu.mapapi.map.MapView
-        android:id="@+id/bmapView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:clickable="true"
-        android:focusable="true"
-        app:layout_constraintTop_toBottomOf="@id/searchResult"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/queryFriend_button">
 
-    <!--    <TextView-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:text="Hello World!"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+        <!-- MapView -->
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- ListView -->
+        <ListView
+            android:id="@+id/searchResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <!--    <ListView-->
+<!--        android:id="@+id/searchResult"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:visibility="gone"-->
+<!--        tools:ignore="MissingConstraints" />-->
+<!--    <com.baidu.mapapi.map.MapView-->
+<!--        android:id="@+id/bmapView"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:clickable="true"-->
+<!--        android:focusable="true"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/queryFriend_button" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.cloudmapmobileapp;
+package com.example.BuddyCloudMapApp;
 
 import com.baidu.mapapi.map.BaiduMap;
 import com.baidu.mapapi.map.BaiduMap.OnPolylineClickListener;
