@@ -12,9 +12,9 @@ BuddyCloudMapApp is a **mobile Android App** designed to provide cloud mapping s
 
 ## Features
 
-- Basic Map Functions
-- POI Search
-- Cloud Location and Parner-Shared services
+- 🗺️Basic Map Functions
+- 🏠POI Search
+- 📍Cloud Location and Parner-Shared services
 
 ## Demo Video
 
