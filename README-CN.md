@@ -4,6 +4,7 @@
     🤗<a href="README.md">English</a> • 
     🤗 <a href="README-CN.md">中文</a> • 
 </p>
+</div>
 这是一款基于百度地图的空间云存储的**移动** **Android 应用程序**，旨在提供云地图及伙伴共享服务。
 
 ## 基本功能
