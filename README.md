@@ -6,6 +6,8 @@
 </p>
 </div>
 
+<br/>
+
 BuddyCloudMapApp is a **mobile Android App** designed to provide cloud mapping services. This project is built with Java and leverages various cloud technologies to offer robust mapping functionalities.
 
 ## Features
